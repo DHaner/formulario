@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <title>Registro de Cuentas en Twitch</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <div class="background"></div>
+    <div class="container">
+        <form action="datos.php" method="POST">
+            <h2>Registro de Cuenta</h2>
+            <label for="usuario">Usuario:</label>
+            <input type="text" name="usuario" id="usuario"required>
+            <label for="contrasena">Contraseña:</label>
+            <input type="password" name="contrasena" id="contrasena" required>
+            <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
+            <input type="number" name="dia" id="dia" min="1" max="31" placeholder="Día" required>
+            <input list="meses" name="mes" id="meses1" placeholder="Mes" required>
+            <datalist id="meses">
+                <option value="Enero"></option>
+                <option value="Febrero"></option>
+                <option value="Marzo"></option>
+                <option value="Abril"></option>
+                <option value="Mayo"></option>
+                <option value="Junio"></option>
+                <option value="Julio"></option>
+                <option value="Agosto"></option>
+                <option value="Septiembre"></option>
+                <option value="Octubre"></option>
+                <option value="Noviembre"></option>
+                <option value="Diciembre"></option>
+            </datalist>
+            <input type="number" name="anio" id="anio" min="1900" max="2100" placeholder="Año" required>
+            <label for="telefono">Número de Teléfono:</label>
+            <input list="region" name="lada" id="lada1" placeholder="Región" required>
+            <datalist id="region">
+                <option value="México (+52)"></option>
+                <option value="Estados Unidos (+1)"></option>
+                <option value="Canadá (+1)"></option>
+                <option value="Reino Unido (+44)"></option>
+                <option value="Australia (+61)"></option>
+                <option value="Alemania (+49)"></option>
+                <option value="Francia (+33)"></option>
+                <option value="España (+34)"></option>
+                <option value="Italia (+39)"></option>
+                <option value="Brasil (+55)"></option>
+            </datalist>
+            <input type="tel" name="telefono" id="telefono" placeholder="Número" required pattern="[0-9]{10}" maxlength="10" required>
+            <input type="submit" value="Registrarse">
+        </form>
+    </div>
+</body>
+</html>

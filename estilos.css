@@ -1,0 +1,99 @@
+body {
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+.background{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(fondo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+    filter:blur(5px);
+}
+form {
+    display: block;
+    margin-right: 0px;
+}
+.container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #18181b;
+    border-radius: 5px;
+}
+
+h2 {
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="tel"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    margin-bottom: 10px; /* Agregado para separar los campos */
+    background-color: #18181b;
+    color: #fff;
+}
+input[list="region"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    background-color: #18181b;
+    color: #fff;
+}
+/* Ajuste para el campo de mes */
+input[list="meses"] {
+    width: calc(40% - 11px); /* Ancho de cada campo */
+    padding: 10px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    margin-right: 8px;
+    margin-bottom: 10px;
+    background-color: #18181b;
+    color: #fff;
+}
+
+/* Ajuste para los campos de día y año */
+.container input[name="dia"] {
+    width: calc(20% - 4px); /* Ancho de cada campo */
+    padding: 10px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    margin-right: 8px;
+    background-color: #18181b;
+    color: #fff;
+}
+.container input[name="anio"] {
+    width: calc(20% - -4px); /* Ancho de cada campo */
+    padding: 10px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    margin-right: 0px;
+    background-color: #18181b;
+    color: #fff;
+}
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #a970ff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #fff;
+}
+
